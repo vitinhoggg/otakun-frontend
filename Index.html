@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Streaming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Otakun</h1>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="geraAnime()">Home</a></li>
+                <li><a href="#" onclick="listaDetalhada()">Lista Detalhada</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" id="txtBuscar" placeholder="Buscar anime...">
+            <button id="search-button" onclick="buscar()">Buscar</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="anime-list">
+            <!-- Os animes serão carregados dinamicamente -->
+            <div id="root">
+
+            </div> 
+            
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Otakun. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/script.js" defer></script>
+</body>
+</html>
