@@ -1,11 +1,10 @@
 const baseURL = 'http://localhost:8080';
-const url = "https://kitsu.io/api/edge/anime?filter[text]=naruto"
 
 function getDados(endpoint) {
     return fetch(`${baseURL}${endpoint}`)
         .then(response => response.json())
             .catch(error => {
-                console.error('Erro ao acessar o endpoint /series/top5:', error);
+                console.error('Erro ao buscar lista de animes', error);
             });
 }
 
@@ -13,10 +12,7 @@ function getDados(endpoint) {
 geraAnime();
 function geraAnime() {
     getDados('/').then(
-        (data) => {
-            criarListaAnimes(data)
-            console.log(data)
-        }
+        data => criarListaAnimes(data)
     ).catch(erro => console.log(erro));
 }
 var animes = {};

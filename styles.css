@@ -228,7 +228,9 @@ footer {
     font-size: 20px;
 }
 
-
+#descricao{
+    font-size: 17px;   
+}
 
 
 .class-poster{
@@ -238,10 +240,7 @@ footer {
     margin-right: 10px;
     vertical-align: bottom;
 }
-#descricao{
-    font-size: 17px;
-    
-}
+
 .anime-detalhes{
     width: 80%;
     display: flex;
@@ -256,7 +255,7 @@ footer {
     flex-direction: row;
     vertical-align:bottom;
     align-items: flex-start;
-    margin-bottom: 35px;
+    margin-bottom: 50px;
 }
 .class-poster img {
     height: 100%;
